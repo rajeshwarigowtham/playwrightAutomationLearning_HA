@@ -1,0 +1,60 @@
+//1. Odd or Even
+
+function isOddOrEven(number){
+
+    if(number%2===0){
+        // console.log("The number is even",number);
+        return "even";
+    }else{
+        // console.log("The number is odd",number);
+        return "odd";
+    }
+}
+    let number = 203
+    console.log(isOddOrEven(number));
+
+
+//2.Number Type
+function numberType(intNum){
+if(intNum>0){
+    return "It is a positive number";
+}else if(intNum<0){
+    return "It is a negative number";
+}else{
+    return "It is a neutral number";
+}
+}
+let intNum = 0
+numberType(intNum)
+
+//3.Conditional statements
+function launchBrowser(browserName){
+    if(browserName==="edge"){
+        console.log("It's an edge browser");
+    } else if(browserName==="firefox"){
+        console.log("It's a firefox browser");
+    }else if(browserName==="chrome"){
+        console.log("It's a chrome browser");
+    }else{
+        console.log("It's an invalid browser");
+    }
+}
+launchBrowser("chrome")
+
+function runTests(testType){
+switch (testType){
+    case "sanity":
+    console.log("It's a sanity test");
+    break;
+     case "regression":
+    console.log("It's a regression test");
+    break;
+     case "smoke":
+    console.log("It's a smoke test");
+    break;
+     default:
+    console.log("It's a default test");
+}
+}
+let testType="manual"
+runTests(testType)
