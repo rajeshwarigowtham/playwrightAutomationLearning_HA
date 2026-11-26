@@ -1,3 +1,4 @@
+//1. Primitive datypes
 //string
 var firstName = "Rajeshwari"
 console.log(firstName, typeof firstName)
@@ -16,3 +17,14 @@ console.log(isAutomation, typeof isAutomation)
 //undefined
 var hasPlaywright 
 console.log(hasPlaywright, typeof hasPlaywright)
+
+//2. var, let and const
+const browserVersion ="Chrome"
+function getBrowserVersion(){
+    if(browserVersion==="Chrome"){
+        console.log("It's a chrome browser");
+        var browserVersion=22.19    // try with var and let
+    }
+    console.log(browserVersion);
+}
+getBrowserVersion()
